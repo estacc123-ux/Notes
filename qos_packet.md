@@ -138,9 +138,9 @@ security packet of type **0x1DA6**:
 
 ```
 JSON: { "status": <int>, "err": <string>, "output": <bytes> }
-  "status"  = worker status code (0x2000..0x200B) or 0
-  "err"     = error text ("" on success)
-  "output"  = module output bytes
+  "status" = worker status code (0x2000..0x200B) or 0
+  "err" = error text ("" on success)
+  "output" = module output bytes
 ```
 The JSON text is post-processed by `FUN_063e4828(..., 3, 0)` (3 = mode/level) and
 wrapped in the same `0xD84F` envelope (magic bytes `D8 4F 04 34` = type 0x0434),
